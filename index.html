@@ -15,9 +15,13 @@
 			}).done(function( msg ) {
 				
 				datos = JSON.parse(msg);
-			for(var dat in datos)
+			for(i=0;i<datos.lnght;i++)
 			{
-				alert(msg);				
+				$('table').append('<tr>'+
+				'<td>'+datos[i].id+'</td>'+
+				'<td>'+datos[i].dato1+'</td>'+
+				'<td>'+datos[i].dato2+'</td>'+
+				'<tr>');
 			}
 		});	
 	});
