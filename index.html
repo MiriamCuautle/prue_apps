@@ -17,11 +17,12 @@
 				datos = JSON.parse(msg);
 			for(i=0;i<datos.lenght;i++)
 			{
-				$('#cont').append('<tr>'+
+				$('table').append('<tr>'+
 				'<td>'+datos[i].id+'</td>'+
 				'<td>'+datos[i].dat1+'</td>'+
 				'<td>'+datos[i].dat2+'</td>'+
 				'<tr>');
+				alert(datos[i].id);
 			}
 		});	
 	});
@@ -29,7 +30,7 @@
 </head>
 
 <body>
-	<table id="cont">
+	<table >
     	<tr><th>ID</th><th>DAT1</th><th>DAT2</th>
     </table>
 
