@@ -17,7 +17,7 @@
 				datos = JSON.parse(msg);
 			for(i=0;i<datos.lnght;i++)
 			{
-				$('table').append('<tr>'+
+				$('#cont').append('<tr>'+
 				'<td>'+datos[i].id+'</td>'+
 				'<td>'+datos[i].dat1+'</td>'+
 				'<td>'+datos[i].dat2+'</td>'+
@@ -29,7 +29,7 @@
 </head>
 
 <body>
-	<table>
+	<table id="cont">
     	<tr><th>ID</th><th>DAT1</th><th>DAT2</th>
     </table>
 
